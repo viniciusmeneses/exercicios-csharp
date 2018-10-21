@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="cinemaDataSet" targetNamespace="http://tempuri.org/cinemaDataSet.xsd" xmlns:mstns="http://tempuri.org/cinemaDataSet.xsd" xmlns="http://tempuri.org/cinemaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="connectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.projCinema.Properties.Settings.GlobalReference.Default.connectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="filmeTableAdapter" GeneratorDataComponentClassName="filmeTableAdapter" Name="filme" UserDataComponentName="filmeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connectionString (Settings)" DbObjectName="cinema.filme" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `CODIGO`, `NOME` FROM `filme`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="cinemaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="cinemaDataSet" msprop:Generator_UserDSName="cinemaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="filme" msprop:Generator_TableClassName="filmeDataTable" msprop:Generator_TableVarName="tablefilme" msprop:Generator_TablePropName="filme" msprop:Generator_RowDeletingName="filmeRowDeleting" msprop:Generator_RowChangingName="filmeRowChanging" msprop:Generator_RowEvHandlerName="filmeRowChangeEventHandler" msprop:Generator_RowDeletedName="filmeRowDeleted" msprop:Generator_UserTableName="filme" msprop:Generator_RowChangedName="filmeRowChanged" msprop:Generator_RowEvArgName="filmeRowChangeEvent" msprop:Generator_RowClassName="filmeRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
